@@ -30,7 +30,9 @@
         .card-title { font-size: 1.3rem; margin-bottom: 8px; }
         .card-desc { font-size: 0.9rem; color: #a0a0a0; }
 
-        footer { border-top: 1px solid #33373b; padding-top: 20px; font-size: 0.9rem; color: #777; display: flex; justify-content: space-between; }
+        footer { border-top: 1px solid #33373b; padding-top: 20px; font-size: 0.9rem; color: #777; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .social-links a { color: #9aa0a6; margin-left: 15px; text-decoration: none; transition: color 0.3s ease; }
+        .social-links a:hover { color: #fff; }
         a { color: #fff; text-decoration: none; }
         a:hover { text-decoration: underline; }
     </style>
@@ -43,8 +45,8 @@
         </header>
 
         <section class="gallery">
-            <!-- Project 1 -->
-            <a href="https://www.facebook.com/dayarga" target="_blank" class="card">
+            <!-- Card 1 -> about.html -->
+            <a href="about.html" class="card">
                 <img src="logo1.jpg" alt="The Designer">
                 <div class="card-body">
                     <h2 class="card-title">The Designer</h2>
@@ -52,8 +54,8 @@
                 </div>
             </a>
 
-            <!-- Project 2 -->
-            <a href="https://www.instagram.com/dayarga/" target="_blank" class="card">
+            <!-- Card 2 -> services.html -->
+            <a href="services.html" class="card">
                 <img src="logo2.jpg" alt="Core Services">
                 <div class="card-body">
                     <h2 class="card-title">Core Services</h2>
@@ -61,8 +63,8 @@
                 </div>
             </a>
 
-            <!-- Project 3 -->
-            <a href="https://www.behance.net/Dayargaa" target="_blank" class="card">
+            <!-- Card 3 -> works.html -->
+            <a href="works.html" class="card">
                 <img src="https://raw.githubusercontent.com/sdayarga/dayarga.com/b7d39da3d272777007ea2ac71aec8e025d881d63/logo%202.png" alt="Featured Work">
                 <div class="card-body">
                     <h2 class="card-title">Featured Work</h2>
@@ -73,7 +75,13 @@
 
         <footer>
             <p>&copy; 2026 Dayarga Studio. All rights reserved.</p>
-            <p><a href="mailto:contact@dayarga.com">Contact via Email</a></p>
+            <div class="social-links">
+                <!-- Сошиал линкүүдийнхээ URL-ийг энд оруулж засаарай -->
+                <a href="https://facebook.com/YOUR_PAGE" target="_blank">Facebook</a>
+                <a href="https://instagram.com/YOUR_HANDLE" target="_blank">Instagram</a>
+                <a href="https://behance.net/YOUR_HANDLE" target="_blank">Behance</a>
+                <a href="mailto:contact@dayarga.com">Email</a>
+            </div>
         </footer>
     </div>
 </body>
