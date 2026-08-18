@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Designer | Dayarga Studio</title>
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #1a1d20; color: #fff; padding: 40px 20px; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; }
+        .container { max-width: 900px; margin: 0 auto; }
         a.back-btn { color: #9aa0a6; text-decoration: none; display: inline-block; margin-bottom: 30px; font-weight: bold; }
         a.back-btn:hover { color: #fff; text-decoration: underline; }
         h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        p { font-size: 1.1rem; color: #ccc; }
+        p.bio { font-size: 1.1rem; color: #ccc; margin-bottom: 40px; }
+
+        /* 3 Зургийн байршил тохируулах CSS */
+        .image-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            margin-top: 30px; 
+        }
+        .image-grid img { 
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover; 
+            border-radius: 10px; 
+            border: 1px solid #33373b; 
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="index.html" class="back-btn">&larr; Back to Home</a>
         <h1>The Designer</h1>
-        <p>Lead Brand Identity & Logo Designer with 20+ years of experience crafting iconic visuals for leading brands.</p>
+        <p class="bio">Lead Brand Identity & Logo Designer with 20+ years of experience crafting iconic visuals for leading brands.</p>
+
+        <!-- 3 Зураг энд байрлана -->
+        <div class="image-grid">
+            <img src="about1.jpg" alt="Designer Image 1">
+            <img src="about2.jpg" alt="Designer Image 2">
+            <img src="about3.jpg" alt="Designer Image 3">
+        </div>
     </div>
 </body>
 </html>
